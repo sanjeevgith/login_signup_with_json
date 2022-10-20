@@ -1,0 +1,23 @@
+{
+  "signupUsers": [
+    {
+      "ename": "sanjiv sws",
+      "birthdate": "2022-09-27",
+      "gender": "Male",
+      "role": "Writing",
+      "addr1": "ewd",
+      "addr2": "dew",
+      "city": "mumbai",
+      "state": "maharashtra",
+      "pin": "400012",
+      "mobile": "dewd67e12",
+      "fname": "dewedvwe",
+      "fgender": "Female",
+      "fbirthdate": "2022-10-18",
+      "frelationship": "gygyg",
+      "email": "ab@gmail.com",
+      "password": "12345",
+      "id": 1
+    }
+  ]
+}

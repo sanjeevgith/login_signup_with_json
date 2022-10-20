@@ -1,0 +1,140 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="text-center">
+                    <h1>Signup</h1>
+                    <h6>Register your self</h6>
+                </div>
+                <form>
+                    <form [formGroup]="signupForm" (ngSubmit)="signUp()">
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Emplyee Name</label>
+                            <input type="text" formControlName="ename" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Birthdate</label>
+                            <input type="date" formControlName="birthdate" class="form-control"
+                                id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Gender</label>
+                            <fieldset id="group2">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gender" id="exampleRadios1"
+                                        value="Male" formControlName="gender">
+                                    <label class="form-check-label" for="exampleRadios1">
+                                        Male
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gender" id="exampleRadios2"
+                                        value="Female" formControlName="gender">
+                                    <label class="form-check-label" for="exampleRadios2">
+                                        Female
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gender" id="exampleRadios2"
+                                        value="Other" formControlName="gender">
+                                    <label class="form-check-label" for="exampleRadios2">
+                                        Other
+                                    </label>
+                                </div>
+                            </fieldset>
+
+                        </div>
+                        <div class="mt-3">
+                            <label for="exampleFormControlInput1">Hobby</label>
+                            <select class="form-control" formControlName="role">
+                                <option value="" disabled selected hidden>Select</option>
+                                <option value="Coding">Coding</option>
+                                <option value="Writing">Writing</option>
+                                <option value="Reading">Reading</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Addrress</label>
+                            <input type="text" formControlName="addr1" class="form-control" id="exampleInputPassword1"
+                                placeholder="Addr1">
+                            <input type="text" formControlName="addr2" class="form-control" id="exampleInputPassword1"
+                                placeholder="Addr2">
+                            <input type="text" formControlName="city" class="form-control" id="exampleInputPassword1"
+                                placeholder="City">
+                            <input type="text" formControlName="state" class="form-control" id="exampleInputPassword1"
+                                placeholder="State">
+                            <input type="number" formControlName="pin" class="form-control" id="exampleInputPassword1"
+                                placeholder="PIN">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">PAN</label>
+                            <input type="text" formControlName="mobile" class="form-control" id="exampleInputPassword1">
+                        </div>
+
+
+
+
+
+                        <div class="row">
+                            <div class="col-md-12">
+                            <div class="matcard">
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Family Member Details</label>
+                                    <input type="text" formControlName="fname" class="form-control"
+                                        id="exampleInputPassword1" placeholder="Name">
+                                    <label for="exampleInputEmail1" class="form-label">Gender</label>
+                                    <fieldset id="group1">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="fgender"
+                                                id="exampleRadios2" value="Male" formControlName="fgender">
+                                            <label class="form-check-label" for="exampleRadios1">
+                                                Male
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="fgender"
+                                                id="exampleRadios2" value="Female" formControlName="fgender">
+                                            <label class="form-check-label" for="exampleRadios1">
+                                                Female
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="fgender"
+                                                id="exampleRadios2" value="Other" formControlName="fgender">
+                                            <label class="form-check-label" for="exampleRadios1">
+                                                Other
+                                            </label>
+                                        </div>
+                                    </fieldset>
+                                    <label for="exampleInputEmail1" class="form-label">Birthdate</label>
+                                    <input type="date" formControlName="fbirthdate" class="form-control"
+                                        id="exampleInputPassword1" placeholder="Birthdate">
+                                    <input type="text" formControlName="frelationship" class="form-control"
+                                        id="exampleInputPassword1" placeholder="Relationship">
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+
+
+
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Email</label>
+                            <input type="text" formControlName="email" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" formControlName="password" class="form-control"
+                                id="exampleInputPassword1">
+                        </div>
+                        <button type="submit" class="btn btn-primary mb-2">Signup</button>
+                    </form>
+                    <a style="color: white ; margin-top:5px;" routerLink="/login">Already register? click to login!!</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

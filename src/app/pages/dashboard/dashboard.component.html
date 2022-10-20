@@ -1,0 +1,48 @@
+<div class="parag">
+    <p>Employee Details</p>
+</div>
+
+
+
+
+
+<!-- <div *ngFor="let item of finaldata1">
+    {{item.id}}
+    {{item.ename}}
+    {{item.email}}
+    {{item.mobile}}
+  </div> -->
+ 
+
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Emp_Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Mobile</th>
+        <th scope="col">Gender</th>
+        <th scope="col">State</th>
+        <th scope="col">Pin</th>
+        <th scope="col">DOB</th>
+      </tr>
+    </thead>
+    <tbody class="table-group-divider">
+      <tr  *ngFor="let item of finaldata">
+        <th scope="row"> {{item.id}}</th>
+        <td> {{item.ename}}</td>
+        <td> {{item.email}}</td>
+        <td>{{item.mobile}}</td>
+        <td>{{item.gender}}</td>
+        <td>{{item.state}}</td>
+        <td>{{item.pin}}</td>
+        <td>{{item.birthdate}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <a routerLink="/signup">new user? click to signup!!</a>
+
+
+
